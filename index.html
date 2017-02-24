@@ -74,7 +74,7 @@
                   <section class="panel">
                     <div class="intro spotlight color4">
                       <h2 class="major">Competition</h2>
-                      <p>Current competitors include companies whose aim is to either a. <b>Develop a version of the original Praxinoscope</b> or b. <b>Develop old-style photos or modernize animations for the everyday user.</b></p>
+                      <p>Current competitors include companies whose aim is to either <b>Develop a version of the original Praxinoscope</b> or <b>Develop old-style photos or modernize animations for the everyday user.</b></p>
                     </div>
                     <div class="gallery">
                       <div class="group span-3">
@@ -87,14 +87,188 @@
                    </section>
 
                 <!-- Panel -->
-                  <section class="panel">
-                    <div class="intro color2">
+                  <section class="panel color2">
+                    <div class="intro">
                       <h2 class="major">Requirements</h2>
-                      <p>This is the requirements section.</p>
+                      <p>What should the Praxicam do?</p>                   
+                    </div>
+
+                    <div class="inner columns aligned">
+                              
+                      <div class="span-3">
+                        <h3 class="major">Explicit</h3>
+                        <h4>Functional</h4>
+                        <div class="table-wrapper">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>App shall open the phone’s camera and take a series of pictures.</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>App shall be able to format the pictures in the correct order.</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td> App shall be able to allow user to select a sound/song to encode. </td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>App shall be able to communicate with a Raspberry Pi.</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>Pi shall be able to communicate with the Thermal Printer.</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>Thermal Printer shall print the pictures in the correct order.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="span-3">
+
+                        <h4 class="major">continued...</h4>
+                        <div class="table-wrapper">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>7</td>
+                                <td>IR sensor shall read the encoded data on the animation reel.</td>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td>Praxinoscope shall be able to spin at a constant rate.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+
+                        <h4>Non-Functional</h4>
+                        <div class="table-wrapper">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Praxinoscope shall allow easy change of animation reel.</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Praxinoscope shall allow easy alignment of animation reel.</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Praxinoscope shall allow easy attachment and detachment of animation reel. </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="span-3">
+                        <h3 class="major">Implied</h3>
+                        <h4>Functional</h4>
+                        <div class="table-wrapper">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Praxinoscope motor shall be able to turn the Praxinoscope wheel.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <h4>Non-Functional</h4>
+                        <div class="table-wrapper">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Printed animation reel shall be long enough to fill the circumference of the Praxinoscope wheel.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="span-3">
+                        <h3 class="major">Cool</h3>
+                        <h4>Functional</h4>
+                        <div class="table-wrapper">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Praxinoscope should have lights that are synced with the animation/sound.</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Praxinoscope should allow user to control the speed of the animation. </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <h4>Non-Functional</h4>
+                        <div class="table-wrapper">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Praxinoscope shall look flashy and gimmicky and all-round trippy!</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                  </section>
+
+                <!-- Panel -->
+                  <section class="panel color4-alt">
+                    <div class="intro color4">
+                      <h2 class="major">Design</h2>
+                      <p>This is the design section showing interface design.</p>
+                    </div>
+                    <div class="inner columns divided">
+                      <div class="span-3-25">
+                        <form method="post" action="#">
+                          <div class="field half">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                          </div>
+                          <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                          </div>
+                          <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                          </div>
+                          <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="button special" /></li>
+                          </ul>
+                        </form>
+                      </div>
+                      <div class="span-1-5">
+                        <ul class="contact-icons color1">
+                          <li class="icon fa-twitter"><a href="#">@untitled-tld</a></li>
+                          <li class="icon fa-facebook"><a href="#">facebook.com/untitled</a></li>
+                          <li class="icon fa-snapchat-ghost"><a href="#">@untitled-tld</a></li>
+                          <li class="icon fa-instagram"><a href="#">@untitled-tld</a></li>
+                          <li class="icon fa-medium"><a href="#">medium.com/untitled</a></li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="gallery">
                       <div class="group span-3">
-                        <a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
+                        <div class="image filtered span-3" data-position="bottom">
+                          <img src="images/gallery/thumbs/01.jpg" alt=""/>
+                          <blockquote>Hello World!</blockquote>
+                        </div>
                         <a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
                         <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
                       </div>
@@ -137,14 +311,17 @@
                         <blockquote>Lorem ipsum dolor sit amet. Felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in vestibulum. Blandit adipiscing eu iaculis volutpat ac adipiscing volutpat ac adipiscing faucibus.</blockquote>
 
                         <h4>Preformatted</h4>
-                        <pre><code>i = 0;
+                        <pre>
+                          <code>
+                            i = 0;
+                            while (!deck.isInOrder()) {
+                                print 'Iteration ' + (i++);
+                                deck.shuffle();
+                            }
 
-    while (!deck.isInOrder()) {
-        print 'Iteration ' + (i++);
-        deck.shuffle();
-    }
-
-    print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+                            print 'It took ' + i + ' iterations to sort the deck.';
+                          </code>
+                        </pre>
 
                       </div>
                       <div class="span-1-25">
