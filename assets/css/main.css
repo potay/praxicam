@@ -3665,3 +3665,43 @@
 			}
 
 	}
+
+a.image span.text-content {
+	padding: 0 40px;
+	background-color: rgba(140, 97, 49);
+	background:
+	linear-gradient(135deg,
+		rgba(140, 97, 49, 0.3),
+		rgba(140, 97, 49, 0.55)
+	);
+	color: white;
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	-webkit-transition: opacity 500ms, background-color 5s;
+	-moz-transition: opacity 500ms, background-color 5s;
+	-o-transition: opacity 500ms, background-color 5s;
+	transition: opacity 500ms, background-color 5s;
+}
+
+a.image span.text-content span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+a.image:hover img {
+	filter: blur(3px);
+	-webkit-filter: blur(12px);
+	-webkit-transition: filter 500ms;
+	-moz-transition: filter 500ms;
+	-o-transition: filter 500ms;
+	transition: filter 500ms;
+}
+
+a.image:hover span.text-content {
+  opacity: 1;
+}
