@@ -3620,6 +3620,14 @@
 			opacity: 0;
 		}
 
+		body.is-loading #wrapper-wrapper {
+			-moz-transform: translateX(2rem);
+			-webkit-transform: translateX(2rem);
+			-ms-transform: translateX(2rem);
+			transform: translateX(2rem);
+			opacity: 0;
+		}
+
 	@media screen and (max-width: 736px) {
 
 		#wrapper {

@@ -12,17 +12,30 @@
       <div id="page-wrapper">
 
         <!-- Reel Wrapper -->
-          <div style="box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);">
+          <div id="wrapper-wrapper" style="
+          box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
+          -moz-transition: opacity 1s ease-out, -moz-transform 0.75s ease-out;
+          -webkit-transition: opacity 1s ease-out, -webkit-transform 0.75s ease-out;
+          -ms-transition: opacity 1s ease-out, -ms-transform 0.75s ease-out;
+          transition: opacity 1s ease-out, transform 0.75s ease-out;
+          -moz-transition-delay: 0.25s;
+          -webkit-transition-delay: 0.25s;
+          -ms-transition-delay: 0.25s;
+          transition-delay: 0.25s;">
 
             <div style="
+              z-index: 999;
+              /* position: relative;
+              top: 32px; */
               height: 32px;
+              opacity: 0.5;
               background-color: rgba(25, 25, 25, 0.1);
               background-image: url(images/soundwave3.png);
               background-size: contain;">
               &nbsp;
             </div>
             <!-- Wrapper -->
-              <div id="wrapper">
+              <div id="wrapper" style="">
                 <!-- Panel (Banner) -->
                   <section class="panel banner right">
                     <div class="content color0 span-3-75">
@@ -590,7 +603,12 @@
               </div>
 
             <div style="
+              z-index: 999;
+              /* position: relative;
+              top: -32px; */
               height: 32px;
+              width: 100%;
+              opacity: 0.5;
               background-color: rgba(25, 25, 25, 0.1);
               background-image: url(images/soundwave3.png);
               background-size: contain;">
