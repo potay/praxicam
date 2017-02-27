@@ -3713,3 +3713,9 @@ a.image:hover img {
 a.image:hover span.text-content {
   opacity: 1;
 }
+
+@media screen and (min-width: 736px) {
+	div.columns.with-gallery {
+		width: 50%;
+	}
+}

@@ -42,7 +42,7 @@
                       <h1 class="major">This is <br />Praxicam</h1>
                       <p>Praxicam is inspired by the animation device, the Praxinoscope, invented by Charles-Émile Reynaud in France in 1877. We hope to reproduce the purely mechanical process of making moving pictures with the aid of modern electronics, and bring the old back into the new.</p>
                     </div>
-                    <div class="image filtered span-2-75" style="background: #e1e6e1 url(images/pic01.jpg) no-repeat center; background-size: cover" data-position="25% 25%">
+                    <div class="image filtered span-2-75" style="background: #e1e6e1 url(images/pic01.jpg) no-repeat center; background-size: cover; max-height: 100%" data-position="25% 25%">
                       <img src="images/praxicam-logo-color.png" class="span-1-75" alt="" />
                     </div>
                   </section>
@@ -272,19 +272,18 @@
                       <h2 class="major">Components</h2>
                       <p>What makes a Praxicam? <br> As we begin production of the Praxicam, we will continually update this section as we develop each individual part.</p>
                     </div>
-                    <div class="inner columns aligned divided">
-                      
-                      <div class="gallery">
-                        <a href="images/diagrams/function-blocks.png" class="image filtered span-2-5" data-position="top">
-                          <img src="images/diagrams/function-blocks.png" alt="" />
-                          <span class="text-content"><span>
-                            <h4>Functional Architecture</h4>
-                            <p>How does the whole system fit together? </p>
-                            <br></br><br></br><br></br>
-                            Click to enlarge.
-                          </span></span>
-                        </a>
-                      </div>
+                    <div class="gallery">
+                      <a href="images/diagrams/function-blocks.png" class="image filtered span-5" data-position="center">
+                        <img src="images/diagrams/function-blocks.png" alt="" />
+                        <span class="text-content"><span>
+                          <h4>Functional Architecture</h4>
+                          <p>How does the whole system fit together? </p>
+                          <br></br><br></br><br></br>
+                          Click to enlarge.
+                        </span></span>
+                      </a>
+                    </div>
+                    <div class="inner columns aligned divided with-gallery">
 
                       <div class="span-2-75">
                         <h3 class="major">Praxicam App</h3>
@@ -294,8 +293,13 @@
                         <p>Protocols: Wifi/Internet Connection</p>
                       </div>
 
-                      <div class="span-4-5">
-                        <iframe src="https://drive.google.com/file/d/0B6Stg8n_snF6WmtEajNtc2p0MzQ/preview" width="697" height="392"></iframe>
+                      <div class="span-3-5" style="height: 100%;">
+                          <div style="position: relative;
+                                      padding-bottom: 56.25%;
+                                      height: 0;">
+                            <iframe src="https://drive.google.com/file/d/0B6Stg8n_snF6WmtEajNtc2p0MzQ/preview"
+                                    style="position: absolute; top: 50%; left: 0; transform: translateY(-37.5%); width: 100%; height: 100%;"></iframe>
+                          </div>
                       </div>
                       <div class="span-2-75">
                         <h3 class="major">Praxicam Live</h3>
@@ -305,31 +309,32 @@
                         <p>Protocols: Wifi, BLE</p>
                       </div>
 
-                      <div class="gallery">
-                        <div class="group span-3">
-                          <a href="images/diagrams/power.png" class="image color4 filtered span-3" data-position="bottom">
-                            <img src="images/diagrams/power.png" alt="" class="hover-text" />
-                            <span class="text-content"><span>
+                    </div>
+                    <div class="gallery">
+                      <div class="group span-4">
+                        <a href="images/diagrams/power.png" class="image color4 filtered span-4" data-position="bottom">
+                          <img src="images/diagrams/power.png" alt="" class="hover-text" />
+                          <span class="text-content">
+                            <span>
                               <h4>Power</h4>
                               <p>How does power fit into the system?</p>
-                              <br></br>
+                              <br><br>
                               Click to enlarge.
-                            </span></span>
-                          </a>
+                            </span>
+                          </span>
+                        </a>
 
-                          <a href="images/diagrams/dataflow.png" class="image color4 filtered span-3" data-position="top">
-                            <img src="images/diagrams/dataflow.png" alt="" class="hover-text" />
-                            <span class="text-content"><span>
-                              <h4>Dataflow</h4>
-                              <p>How does data fit into the system?</p>
-                              <br></br>
-                              Click to enlarge.
-                            </span></span>
-                          </a>
+                        <a href="images/diagrams/dataflow.png" class="image color4 filtered span-4" data-position="top">
+                          <img src="images/diagrams/dataflow.png" alt="" class="hover-text" />
+                          <span class="text-content"><span>
+                            <h4>Dataflow</h4>
+                            <p>How does data fit into the system?</p>
+                            <br><br>
+                            Click to enlarge.
+                          </span></span>
+                        </a>
 
-                        </div>
                       </div>
-
                     </div>
                   </section>
 
