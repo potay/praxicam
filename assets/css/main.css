@@ -57,23 +57,13 @@
 	    position: fixed; /* Set the navbar to fixed position */
 	    top: 0; /* Position the navbar at the top of the page */
 	    width: 100%; /* Full width */
-	    display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: -moz-flex-start;
-		-webkit-justify-content: -webkit-flex-start;
-		-ms-justify-content: -ms-flex-start;
-		justify-content: flex-start;
+		justify-content: space-around;
 		background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
 		background-size: 128px 128px, auto, auto;
 		
 	}
-	
+
 	/* Links inside the navbar */
 	#nav-wrapper a {
 	    float: left;
@@ -91,7 +81,7 @@
 	}
 	
 	#concept-section:before {
-		padding-left: 10000px;
+		padding-left: 100px;
 		display:block;
 		content:"";
 	}
