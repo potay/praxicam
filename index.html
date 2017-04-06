@@ -14,9 +14,9 @@
 			<a href="#motivation-section">Motivation</a>
 			<a href="#concept-section">Concept</a>
 			<a href="#competition-section">Competition</a>
-			<a href="#requirements-section">Requirements</a>
+			<a href="#requirements-section">Requirements & Use Cases</a>
 			<a href="#technical-section">Technical Specification</a>
-			<a href="#components-section">Components Specification</a>
+			<a href="#components-section">Components</a>
 			<a href="#progress-section">Progress</a>
 			<a href="#team-section">Team</a>
 		</nav>
@@ -83,13 +83,13 @@
                     <div class="inner columns">
                       <div class="span-2-75">
                         <p>People often capture moments in their life through their camera, but only get to relive them through the small screen on their phones. With Praxicam, we can make that moment come alive again by bringing that experience into the real world, supplementing it with lights and sounds that enrich the whole experience.</p>
-                        <p>Praxicam will be a whole ecosystem to capture and relive past moments. Using the <b>Praxicam app</b> on your phone, you will be able to capture these moments. The app will process the moment, save it, as well as print it out onto a paper reel. These animation reels can then by inserted into the <b>Praxicam Live</b> device which will play the reel and allow you to relive your memories.</p>
+                        <p>Praxicam will be a whole ecosystem to capture and relive past moments. Using the <b>Praxicam app</b> on your phone, you will be able to capture these moments. The app will process the moment, save it, as well give the user the option to print it out onto a paper reel. These paper animation reels can then by inserted into the <br><b>Praxicam Live</b> device which will play the reel and allow you to relive your memories.</p>
                       </div>
                       <div class="span-2-75">
                         <img src="https://hollythickbroomanimation.files.wordpress.com/2015/03/billdouglas-praxinoscope.gif" style="width: 100%; box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);">
                       </div>
                       <div class="span-2-75">
-                        <p>Praxicam Live consists of various parts, namely a motor box which contains the different components (eg. raspberry pi, PCB, printer, power source etc.), that will be at the base of the main unit. The animation sheet would also be printed directly from the printer and can be immediately inserted into the wheel.</p>
+                        <p><b>Praxicam Live</b> consists of various parts, namely a motor box which contains the different components (eg. raspberry pi, PCB, printer, power source etc.), that will be at the base of the main unit. The animation sheet would also be printed directly from the printer and can be immediately inserted into the wheel.</p>
                       </div>
                       <div class="span-2-75">
                         <img src="images/overall-system-sketch.png" style="width: 100%; max-height: 100%; box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);">
@@ -378,38 +378,52 @@
 Your browser does not support the video tag.
 </video>
                           <span class="text-content"><span>
-                            <h4>Tiny Thermal Receipt Printer</h4>
-                            <p></p>
+                            <h4>Tiny Thermal Receipt Printer - TTL Serial / USB</h4>
+                            <p>
+	                           Prints out animation reels 
+	                           <br><br>
+	                           Adafruit Product ID: 2751
+                            </p>
                           </span></span>
                         </a>
                         <a href="https://cdn-shop.adafruit.com/970x728/3055-08.jpg" class="image color4 filtered span-1-5" data-position="center">
                           <img src="https://cdn-shop.adafruit.com/970x728/3055-08.jpg" alt="" class="hover-text"/>
                           <span class="text-content"><span>
                             <h4>Raspberry Pi3</h4>
-                            <p></p>                          
+							<p>
+								Wifi-communication, retrieves images from endpoint, sends to printer.
+								Controls motor, and BLE communication for lights and sound. <br>
+                            </p>                            
                             </span></span>
                         </a>
-                        <a href="images/components/" class="image color4 filtered span-1-5" data-position="bottom">
-                          <img src="images/components" alt="" class="hover-text" />
+                        <a href="https://images-na.ssl-images-amazon.com/images/I/61HBCoj%2BkYL._SL1000_.jpg" class="image color4 filtered span-1-5" data-position="bottom">
+                          <img src="https://images-na.ssl-images-amazon.com/images/I/61HBCoj%2BkYL._SL1000_.jpg" alt="" class="hover-text" />
                           <span class="text-content"><span>
                             <h4>Motor, Hall-Effect Encoder & H-Bridge</h4>
-                            <p></p>
+                            <p>
+	                            Stand and spinner for the wheel. Encoder and H-Bridge for PID control.
+                            </p>
                           </span></span>
                         </a>
                       </div>
                       <div class="group span-3">
-                        <a href="images/components/" class="image color4 filtered span-1-5" data-position="center">
-                          <img src="images/components/" alt="" class="hover-text" />
+                        <a href="images/components/lcd-display.jpeg" class="image color4 filtered span-1-5" data-position="center">
+                          <img src="images/components/lcd-display.jpeg" alt="" class="hover-text" />
                           <span class="text-content"><span>
                             <h4>16x2 Character LCD</h4>
-                            <p></p>                          
+                            <p>
+	                            Diagnostic & Status display. 
+                            </p>                          
                             </span></span>
                         </a>
-                        <a href="https://cloud.google.com/images/products/appengine/appenginehero.svg" class="image color4 filtered span-1-5" data-position="top">
-                          <img src="https://cloud.google.com/images/products/appengine/appenginehero.svg" alt="" class="hover-text" />
+                        <a href="images/components/appenginehero.jpg" class="image color4 filtered span-1-5" data-position="center">
+		                  <img src="images/components/appenginehero.jpg" alt="" class="hover-text" />
                           <span class="text-content"><span>
                             <h4>Google App Engine, Blobstore, Datastore</h4>
-                            <p></p>
+                            <p>
+	                            Endpoint for the phone-app. Phone application uploads gifs & sounds to server, 
+	                            RPI3 retrieves gifs & sounds to be printed and played.
+                            </p>
                           </span></span>
                         </a>
                         
@@ -417,31 +431,43 @@ Your browser does not support the video tag.
                         <a href="https://cdn.sparkfun.com//assets/parts/1/8/8/00246a-02.jpg" class="image color4 filtered span-3" data-position="top">
                           <img src="https://cdn.sparkfun.com//assets/parts/1/8/8/00246a-02.jpg" alt="" class="hover-text" />
                           <span class="text-content"><span>
-                            <h4>IR Sensor</h4>
-                            <p></p>
+                            <h4>Optical Detector / Phototransistor - QRD1114</h4>
+                            <p>
+                            </p>
                           </span></span>
                         </a>
                       </div>
-                                            <div class="group span-3">
+                      <div class="group span-3">
                         <a href="https://cdn.sparkfun.com//assets/parts/9/2/2/9/12577-01.jpg" class="image color4 filtered span-3" data-position="center">
                           <img src="https://cdn.sparkfun.com//assets/parts/9/2/2/9/12577-01.jpg" alt="" class="hover-text" />
                           <span class="text-content"><span>
                             <h4>Bluetooth Modem</h4>
-                            <p></p>
+                            <p>
+	                            Communicates with RPI3 for control of our LED strip.
+	                            <br><br>
+	                            Sparkfun Product ID: COM-12577
+
+                            </p>
                           </span></span>
                         </a>
                         <a href="https://cdn-shop.adafruit.com/970x728/1085-02.jpg" class="image color4 filtered span-1-5" data-position="center">
                           <img src="https://cdn-shop.adafruit.com/970x728/1085-02.jpg" alt="" />
                           <span class="text-content"><span>
                             <h4>ADS1115 16-Bit ADC </h4>
-                            <p></p>                          
+                            <p>
+	                            <br><br>
+	                            Adafruit Product ID: 1085
+                            </p>                          
                             </span></span>
                         </a>
                         <a href="https://cdn.sparkfun.com//assets/parts/8/5/5/5/12027.jpg" class="image color4 filtered span-1-5" data-position="bottom">
                           <img src="https://cdn.sparkfun.com//assets/parts/8/5/5/5/12027.jpg" alt="" />
                           <span class="text-content"><span>
                             <h4>LED RGB Strip </h4>
-                            <p></p>
+                            <p>
+	                            <br><br>
+	                            Sparkfun Product ID: COM-12027
+                            </p>
                           </span></span>
                         </a>
                       </div>

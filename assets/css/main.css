@@ -3735,6 +3735,7 @@ a.image span.text-content span {
   vertical-align: middle;
 }
 
+
 a.image:hover img {
 	filter: blur(3px);
 	-webkit-filter: blur(12px);
